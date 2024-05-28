@@ -5,7 +5,8 @@
 ### Deployment
 #### Docker
 1. `git clone https://github.com/Tuscan-blue/cnhaven.git`
-2. `docker compose up`
+2. `cd cnhaven`
+3. `docker compose up`
 
 ### Haven
 
