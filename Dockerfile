@@ -1,5 +1,9 @@
 FROM ruby:3.1.4-slim-bullseye
 
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+COPY sources.list /etc/apt/sources.list
+
+
 RUN apt-get update -yqq && \
     apt-get install -yqq \
 	autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev \
